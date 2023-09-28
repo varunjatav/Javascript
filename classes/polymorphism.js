@@ -17,5 +17,8 @@ class Alligator extends Animal {
     }
 }
 
+let dog = new Animal("Brutus");
+dog.eats();
+
 let murphy = new Alligator("Murphy");
 murphy.eats();
