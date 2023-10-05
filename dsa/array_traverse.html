@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Traversing</title>
+   
+</head>
+<body>
+    <form action="">
+        <label for="">
+        <input type="text"  id="element"/>
+        <button type="submit" onclick="getElement()">Get Element</button>
+    </form>
+    <br>
+</body>
+
+<script>
+    let data = [9,45,1,7,0,11,41,77,23,12,78];
+    for(let i=0; i < data.length; i++) {
+        console.log(data[i]);
+        document.write(`index ${i} is ${data[i]} <br>`);
+    }    
+
+    const getElement = () => {
+        let el = document.getElementById("element").value;
+        if(el >= 0 && el < data.length && typeof parseInt(el) == "number"){
+          
+            alert(data[el]);
+        }
+        else{
+            alert("Element does not exist. Please enter a valid number");
+        }
+        
+       
+    }
+</script>
+</html>
